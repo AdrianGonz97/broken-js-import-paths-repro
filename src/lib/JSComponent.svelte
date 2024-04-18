@@ -1,6 +1,9 @@
+<!-- 👇 (note the lack of `lang="ts"` attribute) -->
 <script>
-	// import causes the app to break because of the `.js` extension (note the lack of `lang="ts"` attribute)
+	// this import causes the app to break because of the `.js` extension
 	import { foo } from "./foo.js";
+
+	// however, using a `.ts` extension fixes it...
 	// import { foo } from "./foo.ts";
 
 	foo();
